@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MyBehaviour : MonoBehaviour
 {
+    public Rigidbody body;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +14,6 @@ public class MyBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        body.AddForce(new Vector3(1, 0, 0));
     }
 }
